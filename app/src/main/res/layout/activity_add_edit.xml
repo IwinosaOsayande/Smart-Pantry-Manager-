@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <EditText android:id="@+id/et_name" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Ingredient name (e.g. tomatoes)" android:inputType="textCapWords" android:maxLines="1" />
+
+        <EditText android:id="@+id/et_qty" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:hint="Quantity" android:inputType="numberDecimal" />
+
+        <Spinner android:id="@+id/sp_unit" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginTop="12dp" />
+
+        <EditText android:id="@+id/et_expiry" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:hint="Expiry date (optional) - tap to choose"
+            android:focusable="false" android:clickable="true" android:inputType="none" />
+
+        <Button android:id="@+id/btn_clear_expiry" style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear date" />
+
+        <Button android:id="@+id/btn_save" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Save" />
+    </LinearLayout>
+</ScrollView>
